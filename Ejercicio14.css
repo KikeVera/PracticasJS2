@@ -88,7 +88,7 @@ h1 {
 	  font: 400 1em ARIAL, sans-serif;
 	  color: #FFFFFF;
 	   background-color:#828282;
-	   width:20em;
+	   width:15em;
 	    margin-top:1em;
 	   height:1.5em;
   }
@@ -108,8 +108,10 @@ h1 {
   
   @media (max-width: 450px) {
      h1 {
-       font: 400 1em ARIAL, sans-serif ;	
+       font: 400 2em ARIAL, sans-serif ;	
      }
+	 
+  }
 	
 	
 }

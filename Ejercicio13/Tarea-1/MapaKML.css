@@ -102,7 +102,12 @@ h1 {
 	  color: #000000;
   }
   
-  
+  @media (max-width: 450px) {
+     h1 {
+       font: 400 2em ARIAL, sans-serif ;	
+     }
+	 
+  }
   
   
   
