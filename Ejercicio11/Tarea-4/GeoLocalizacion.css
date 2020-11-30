@@ -87,7 +87,7 @@ h1 {
   
   @media (max-width: 450px) {
      h1 {
-       font: 400 2em ARIAL, sans-serif ;	
+       font: 400 1.5em ARIAL, sans-serif ;	
      }
 	 
   }
