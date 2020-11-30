@@ -54,7 +54,7 @@ h1 {
   }
   
   #listaLocal{
-	  font: 400 1.1em ARIAL, sans-serif;
+	  font:  1.1em ARIAL, sans-serif;
 	  text-align:left;
 	   background-color:#FFFFFF ;
 	   color: #0000FF;
@@ -62,7 +62,7 @@ h1 {
   }
   
   #listaEntrante{
-	  font: 400 1.1em ARIAL, sans-serif;
+	  font:  1.1em ARIAL, sans-serif;
 	  text-align:right;
 	   background-color:#FFFFFF ;
 	   color: #FF0000;
@@ -75,7 +75,7 @@ h1 {
 	  overflow-y: scroll;
 	  
 	   background-color:#FFFFFF ;
-	 
+	 color: #000000;
 	   height:13em;
 	   margin-left:5%;
 	   margin-right:5%;
@@ -115,14 +115,16 @@ h1 {
   
   label{
 	  font: 400 1em ARIAL, sans-serif;
+	  background-color:#E3E4E5;
 	  color: #000000;
   }
   
   
   
   @media (max-width: 450px) {
-     h1 {
-       font: 400 2em ARIAL, sans-serif ;	
+     #titulo{
+       
+	   font-size: 2em;
      }
 	 
   }

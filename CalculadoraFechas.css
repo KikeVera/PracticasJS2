@@ -1,5 +1,7 @@
 body{
 	
+	font: 400 1em ARIAL, sans-serif;
+	color: #000000;
 	background-color:#E3E4E5;
 }
 
@@ -58,6 +60,7 @@ h2{
 	  overflow-y: scroll;
 	  text-align:center;
 	   background-color:#FFFFFF ;
+	   color: #000000;
 	   font: 400 1.3em ARIAL, sans-serif;
 	   height:6em;
 	   margin-left:5%;
@@ -86,6 +89,7 @@ h2{
   label{
 	  font: 400 1em ARIAL, sans-serif;
 	  color: #000000;
+	background-color:#E3E4E5;
   }
   
   

@@ -96,13 +96,15 @@ h1 {
   
    label{
 	  font: 400 1em ARIAL, sans-serif;
+	   background-color:#E3E4E5;
 	  color: #000000;
   }
   
   
   @media (max-width: 450px) {
-     h1 {
-       font: 400 2em ARIAL, sans-serif ;	
+    #titulo{
+       
+	   font-size: 2em;
      }
 	 
   }
