@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CalculadoraCientifica</title>
+<link rel="stylesheet" href="CalculadoraCientifica.css"/>
+<script src="CalculadoraCientifica.js"></script>
+<script>var calculadora= new CalculadoraCientifica()</script>
+
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<section class="calculadora">
+<h2>Calculadora Cientifica</h2>
+<label for="ans">Ans:</label> 
+<input disabled="disabled" type="text" id="ans">
+
+<div>
+<input type="button" value="DEG" id="angs" class="mem" onclick="calculadora.cambiaUdsAngulo()" >
+<input type="button" value="HYP" onclick="calculadora.cambiaTrigonometria()" class="mem" >
+<input type="button" value="mr" class="mem" onclick="calculadora.recuperarMemoria()">
+<input type="button" value="mc" class="mem" onclick="calculadora.borrarMemoria()">
+<input type="button" value="m-"  class="mem" onclick="calculadora.restarNumeroMemoria()">
+<input type="button" value="m+" class="mem" onclick="calculadora.sumarNumeroMemoria()">
+<input type="button" value="ms" class="mem" onclick="calculadora.guardarEnMemoria()">
+
+
+</div>
+<div>
+<input type="button" value="x&#178;" onclick="calculadora.calcularCuadrado()" >
+<input type="button" value="x&#8319;" onclick="calculadora.calcularPEnesima()">
+<input type="button" value="sin" id="sin" onclick="calculadora.calculaSin()" >
+<input type="button" value="cos" id="cos" onclick="calculadora.calculaCos()" >
+<input type="button" value="tan" id="tan" onclick="calculadora.calculaTan()" >
+</div>
+<div>
+<input type="button" value="√" onclick="calculadora.calculaRaiz()" >
+<input type="button" value="10&#8319;" onclick="calculadora.calculaPotencia10()">
+<input type="button" value="log" onclick="calculadora.calculaLogaritmo()" >
+<input type="button" value="Exp" onclick="calculadora.escribir('e+')" >
+<input type="button" value="Mod" onclick="calculadora.calculaResto()" >
+</div>
+
+
+<div>
+<input type="button" value="e" onclick="calculadora.escribir('2.718281828459045')">
+<input type="button" value="CE" onclick="calculadora.previusCalculation()">
+<input type="button" value="C" onclick="calculadora.borrar()">
+<input type="button" value="<-" onclick="calculadora.back()" >
+<input type="button" value="/" onclick="calculadora.escribir('/')">
+</div>
+
+<div>
+<input type="button" value="π" onclick="calculadora.escribir('3.141592653589793')" >
+<input type="button" value="7" onclick="calculadora.escribir('7')">
+<input type="button" value="8" onclick="calculadora.escribir('8')">
+<input type="button" value="9" onclick="calculadora.escribir('9')">
+<input type="button" value="x" onclick="calculadora.escribir('*')">
+</div>
+<div>
+<input type="button" value="n!" onclick="calculadora.calcularFactorial()">
+<input type="button" value="4" onclick="calculadora.escribir('4')">
+<input type="button" value="5" onclick="calculadora.escribir('5')">
+<input type="button" value="6" onclick="calculadora.escribir('6')">
+<input type="button" value="-" onclick="calculadora.escribir('-')">
+</div>
+<div>
+<input type="button" value="+-" onclick="calculadora.cambiaSigno()">
+<input type="button" value="1" onclick="calculadora.escribir('1')">
+<input type="button" value="2" onclick="calculadora.escribir('2')">
+<input type="button" value="3" onclick="calculadora.escribir('3')">
+<input type="button" value="+" onclick="calculadora.escribir('+')">
+</div>
+<div>
+<input type="button" value="(" onclick="calculadora.escribir('(')">
+<input type="button" value=")" onclick="calculadora.escribir(')')">
+<input type="button" value="0" onclick="calculadora.escribir('0')">
+<input type="button" value="." onclick="calculadora.escribir('.')">
+<input type="button" value="=" onclick="calculadora.evaluar()">
+</div>
+</section>
+</body>
+</html>

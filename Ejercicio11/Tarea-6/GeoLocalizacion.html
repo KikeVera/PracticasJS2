@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="GeoLocalizacion.css" />
+
+	<script src="GeoLocalizacion.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>var geoL= new GeoL()</script>
+	<script>geoL.definirFuncion()</script>
+	<script>geoL.defineCentro(43.4418800,-5.8165700)</script>
+	<script>geoL.definirDesplazar()</script>
+	
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoAdfDnwfjlipFtRhfrTS8M0UFdt8UxHY&callback=geoL.initMap"></script>
+	<!--<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoAdfDnwfjlipFtRhfrTS8M0UFdt8UxHY&callback=geoL.desplazar"></script>-->
+
+	
+
+	
+    <title>GeoLocalizacion</title> 
+</head>
+
+<body>
+    
+	
+    <h1>GeoLocalizacion</h1>
+	
+	
+   
+	
+	<h2>Mapa</h2>
+	<label for="direccion">Introduce direccion para buscar en el mapa:</label> 
+	<input  type="text" id="direccion">
+	<input type="button" value="Buscar" onclick="geoL.desplazarA()">
+	
+	<div id="mapa"></div>
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+</body>
+</html>

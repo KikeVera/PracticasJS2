@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+	<script src="Ejercicio7.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>var js= new MatrixJS()</script>
+	
+	
+    <title>Matrix</title> 
+</head>
+
+<body>
+    
+	
+    <h1>Matrix</h1>
+	<input type="button" id="mostrar" value="Mostrar titulos" onclick="js.mostrarTitulos()" >
+	<input type="button" id="ocultar" value="Ocultar titulos" onclick="js.ocultarTitulos()" >
+	<input type="button" value="To english" onclick="js.ingles()" >
+	<input type="button" value="A español" onclick="js.español()" >
+	<input type="button" value="Añadir secuelas" onclick="js.añadirSecuelas()" >
+	<input type="button" value="Eliminar secuelas" onclick="js.eliminarSecuelas()" >
+	<input type="button" value="Recorrido" onclick="js.recorrido()" >
+	<input type="button" value="Suma filas y columnas" onclick="js.sumaFilasYColumnas()" >
+	<label for="ans">Ans:</label> 
+	<input disabled="disabled" type="text" id="ans">
+	
+   
+	
+	<h2 id="iniciot">Inicio</h2>
+	<h3 id="descripciont">Descripcción</h3>
+	<div id="descripcion">
+	<p>The Matrix (titulada Matrix en español) es una película de ciencia ficción escrita y dirigida
+	   por las hermanas Wachowski y protagonizada por Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss 
+	   y Hugo Weaving.  Estrenada en los Estados Unidos el 31 de marzo de 1999. Es la primera entrega de 
+	   la trilogía de  Matrix de la que derivan (dado su éxito) una serie de videojuegos, cortos animados y cómics. 
+	</p>
+	</div>
+	
+	<h2>Información</h2>
+	
+	
+	
+	
+    <h3>Premios</h3>
+	<p>La película fue reconocida por la Academia con 4 Premios Óscar: </p>
+	
+	<ul>
+		<li>Mejor Montaje</li>
+		<li>Mejor Sonido</li>
+		<li>Mejor Edición de Sonido</li>
+		<li>Mejores Efectos Visuales</li>
+	</ul>
+	
+	
+	<h3>Curiosidades</h3>
+	<h4>Efectos visuales</h4>
+	<p>Si bien se ha vuelto una película de culto, y en su argumento se establecen paralelismos con conceptos religiosos, 
+	   filosóficos e ideológicos; marcó un antes y un después en los efectos visuales de la época.
+	 </p> 
+	 <p>  
+	   De entre los que se destaca el «tiempo bala» (bullet time), técnica que consiste en aparentar que se congela 
+	   la acción mientras la cámara sigue moviéndose alrededor de la escena. El efecto visual se consigue utilizando 
+	   múltiples cámaras que graban la acción desde distintas posiciones a una cantidad elevada de fotogramas por segundo, 
+	   posteriormente se intercalan los fotogramas de cada una de las cámaras. 
+	   Aunque es un efecto muy revolucionario no fue la primera vez que hacía su aparición en el cine 
+	   (anteriormente fue usado en películas como Jumanji, entre otras), pero fue con este film innovador cuando surgió 
+	   un gran interés por este efecto, posteriormente utilizado en varias películas.
+	  </p>
+	
+	
+	<h3>Protagonistas</h3>	
+	
+	<ul>
+		<li>Laurence Fishburne</li>
+		<li>Carrie-Anne Moss</li>
+		<li>Joe Pantoliano</li>
+		<li>Hugo Weaving</li>
+		<li>Keanu Reeves</li>
+		<li>Gloria Foster</li>
+	</ul>
+	
+	<h2>Banda sonora</h2>
+	
+	
+	<table class="banda">
+	<thead>
+	<tr>
+		<th>Banda Sonora</th>
+		<th>Artista</th>
+		<th>Duración</th>
+		
+		
+	</tr>
+	
+	</thead>
+	<tbody lang="en">
+	<tr>
+		<td>"Rock is Dead" </td>
+		<td>Marilyn Manson </td>
+		<td>3:11</td>
+		
+	</tr>
+	<tr>
+		<td>"Spybreak! (Short One)" </td>
+		<td>Propellerheads </td>
+		<td>4:00</td>
+		
+	</tr>
+	<tr>
+		<td>"Bad Blood" </td>
+		<td> Ministry </td>
+		<td>5:00</td>
+		
+	</tr>
+	
+	<tr>
+		<td>"Clubbed to Death (Kurayamino Mix)" </td>
+		<td> "Rob Dougan" </td>
+		<td>7:26</td>
+		
+	</tr>
+	<tr>
+		<td>"Prime Audio Soup"  </td>
+		<td>Meat Beat Manifesto </td>
+		<td>6:17</td>
+		
+	</tr>
+	<tr>
+		<td>"Leave You Far Behind </td>
+		<td>Lunatic Calm  </td>
+		<td>3:13</td>
+		
+	</tr>
+	<tr>
+		<td>"Mindfields" </td>
+		<td>The Prodigy</td>
+		<td>5:40</td>
+		
+	</tr>
+	<tr>
+		<td>"Dragula (Hot Rod Herman Remix)" </td>
+		<td>Rob Zombie  </td>
+		<td>4:37</td>
+		
+	</tr>
+	<tr>
+		<td>"My Own Summer (Shove It)"</td>
+		<td>Deftones </td>
+		<td>3:34</td>
+		
+	</tr>
+	<tr>
+		<td>"Ultrasonic Sound"</td>
+		<td>Hiven </td>
+		<td>4:54</td>
+		
+	</tr>
+	<tr>
+		<td>"Look to Your Orb for the Warning" </td>
+		<td>Monster Magnet </td>
+		<td>4:42</td>
+		
+	</tr>
+	<tr>
+		<td>"Du Hast"</td>
+		<td> Rammstein</td>
+		<td>3:54</td>
+		
+	</tr>
+	<tr>
+		<td>"Wake Up"</td>
+		<td> RATM  </td>
+		<td> 6:03</td>
+		
+	</tr>
+	
+	
+	
+	
+
+	</table>
+	
+	
+	
+	
+	
+   
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CalculadoraFechas</title>
+<link rel="stylesheet" href="CalculadoraFechas.css"/>
+<script src="CalculadoraFechas.js"></script>
+<script>var calculadora= new CalculadoraFechas()</script>
+
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<section class="calculadora">
+<h2>Calculadora Fechas</h2>
+
+<div>
+
+
+<label for="year1">Year 1:</label> 
+<input  type="text" id="year1">
+<label for="month1">Month 1:</label> 
+<input type="text" id="month1">
+<label for="day1">Day 1:</label> 
+<input type="text" id="day1">
+</div>
+
+
+<label for="year2">Year 2:</label> 
+<input  type="text" id="year2">
+<label for="month2">Month 2:</label> 
+<input  type="text" id="month2">
+<label for="day2">Day 2:</label> 
+<input  type="text" id="day2">
+
+<div id="pila" class="pila" ></div>
+
+
+<div>
+<input type="button" value="Festivos en toda Asturias entre ambas fechas (Datos de 2015 a 2020)" onclick="calculadora.getFestivos()" >
+
+
+
+
+</div>
+<div>
+
+<input type="button" value="Dias entre ambas fechas" onclick="calculadora.restaDias()"  >
+</div>
+
+
+</section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+	
+    <meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+	<script src="Ejercicio10.js"></script>
+	<script>var traductor= new Traductor()</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>traductor.configuraAPI()</script>
+	
+	
+	
+	
+	
+	
+    <title>Traductor</title> 
+</head>
+
+<body>
+    
+	
+    <h1>Chat Autotraducido</h1>
+	
+	
+   
+	<section class="chat">
+	<h2>Chat</h2>
+	<h3>Persona española</h3>
+	<div><ul id= "español"></ul></div>
+	<label for="ansEspañol">Texto:</label> 
+	<input type="text" id="ansEspañol">
+	<input type="button" value="Enviar" onclick="traductor.escribirEsp()">
+	
+	<h3>Persona inglesa</h3>
+	<div ><ul id= "ingles"></ul></div>
+	<label for="ansIngles">Texto:</label> 
+	<input type="text" id="ansIngles">
+	<input type="button" value="Enviar" onclick="traductor.escribirEng()" >
+	</section>
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+   
+	
+	
+	
+</body>
+</html>

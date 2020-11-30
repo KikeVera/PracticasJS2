@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Senda del Oso</name>
+<description>Sencilla ruta de ida y vuelta por la mitica senda del oso</description>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-5.983244,43.294415,110.3 
+-6.005233,43.257792,135.2 
+-6.036875,43.229107,151.6 
+-6.011406,43.200713,212.7 
+</coordinates>
+<altitudeMode>absoluto</altitudeMode>
+</LineString>
+<Style>id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Camín Real por Fonfría</name>
+<description>Ruta de bicicleta de montaña por el antiguo Camín Real</description>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-6.096584,43.155353,813.5 
+-6.105068,43.115278,1213.8 
+-6.087672,43.073181,1792.3 
+-6.011092,43.052585,1475.6 
+</coordinates>
+<altitudeMode>absoluto</altitudeMode>
+</LineString>
+<Style>id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Santo Adriano del Monte</name>
+<description>Ruta circular visitando el pueblo abandonado de Santo Adriano del Monte</description>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-6.020954,43.314812,350.2 
+-6.028425,43.272539,835.9 
+-6.084912,43.283341,994.8 
+-6.059770,43.287170,670.1 
+</coordinates>
+<altitudeMode>absoluto</altitudeMode>
+</LineString>
+<Style>id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

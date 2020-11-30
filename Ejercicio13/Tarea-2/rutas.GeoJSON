@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-5.983244,43.294415],[-6.005233,43.257792],[-6.036875,43.229107],[-6.011406,43.200713]]
+      },
+      "properties": {
+        "name": "Ruta1"
+   		
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-6.096584,43.155353],[-6.105068,43.115278],[-6.087672,43.073181],[-6.011092,43.052585]]
+      },
+      "properties": {
+        "name": "Ruta2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-6.020954,43.314812],[-6.028425,43.272539],[-6.084912,43.283341],[-6.059770,43.287170]]
+      },
+      "properties": {
+        "name": "Ruta3"
+      }
+    }
+  ]
+}
