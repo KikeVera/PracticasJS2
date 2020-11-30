@@ -44,8 +44,8 @@ h2{
   }
   input[type=text]{
 	  
+	  margin-bottom:1em;
 	  
-	  margin: 0.5em;
 	  font: 400 1.5em ARIAL, sans-serif;
 	  color: #000000;
 	   background-color:#FFFFFF;
