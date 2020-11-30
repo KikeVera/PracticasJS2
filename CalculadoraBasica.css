@@ -1,5 +1,5 @@
 body{
-	
+	 position:relative;
 	background-color:#E3E4E5;
 }
 
@@ -8,6 +8,7 @@ h1{
 	
 	font: 400 2em ARIAL, sans-serif;
 	  text-align:center;
+	   position:relative;
 	  background-color:#E3E4E5;
 	  color: #000000;
 	  text-decoration:underline;
@@ -19,6 +20,7 @@ h2{
 	  
 	  font: 400 1.8em ARIAL, sans-serif;
 	  text-align:center;
+	   position:relative;
 	  background-color:#E3E4E5;
 	  color: #000000;
 	  
@@ -33,6 +35,7 @@ h2{
   section.calculadora{
 	  
 	  text-align:center;
+	   position:relative;
 	
 	 
   }
@@ -42,6 +45,7 @@ h2{
 	  margin: 0.5em;
 	  font: 400 1.5em ARIAL, sans-serif;
 	  color: #000000;
+	   position:relative;
 	   background-color:#FFFFFF;
 	   width:20%;
 	   height:2em;
@@ -50,6 +54,7 @@ h2{
   label{
 	  font: 400 1.5em ARIAL, sans-serif;
 	  color: #000000;
+	   position:relative;
   }
   
   
@@ -59,6 +64,7 @@ h2{
 	  margin: 0.2em 0.4em;
 	  font: 400 1em ARIAL, sans-serif;
 	  color: #FFFFFF;
+	   position:relative;
 	   background-color:#828282;
 	   width:5%;
 	   height:3em;
