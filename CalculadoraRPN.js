@@ -61,7 +61,7 @@ class CalculadoraRPN{
 			var x=this.pila.pop();
 			var y=this.pila.pop();
 		
-			this.pila.push(parseInt(y)+parseInt(x));
+			this.pila.push(Number.parseFloat(y)+Number.parseFloat(x));
 			this.escribePila();
 		}
 		
@@ -72,7 +72,7 @@ class CalculadoraRPN{
 			var x=this.pila.pop();
 			var y=this.pila.pop();
 		
-			this.pila.push(parseInt(y)-parseInt(x));
+			this.pila.push(Number.parseFloat(y)-Number.parseFloat(x));
 			this.escribePila();
 		}
 	}
@@ -82,7 +82,7 @@ class CalculadoraRPN{
 			var x=this.pila.pop();
 			var y=this.pila.pop();
 		
-			this.pila.push(parseInt(y)*parseInt(x));
+			this.pila.push(Number.parseFloat(y)*Number.parseFloat(x));
 			this.escribePila();
 		}
 		
@@ -93,7 +93,7 @@ class CalculadoraRPN{
 			var x=this.pila.pop();
 			var y=this.pila.pop();
 		
-			this.pila.push(parseInt(y)/parseInt(x));
+			this.pila.push(Number.parseFloat(y)/Number.parseFloat(x));
 			this.escribePila();
 		}
 		
