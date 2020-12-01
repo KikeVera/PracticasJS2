@@ -106,6 +106,7 @@ h1 {
 	  height:30em;
 	  color: #000000;
 	  background-color:#FFFFFF;
+	  overflow:auto;
   }
   
   @media (max-width: 450px) {

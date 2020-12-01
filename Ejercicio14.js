@@ -17,15 +17,16 @@ class Contador{
 			lector.onload = function (evento) {
 				var palabras=lector.result.split(" ");
 				for (var i = 0; i < palabras.length; i++) {
-					if (localStorage.getItem(palabras[i].toLowerCase() )===null) {
-						localStorage.setItem(palabras[i].toLowerCase() , 1);
+					if(palabras[i].length>3){
+						if (localStorage.getItem(palabras[i].toLowerCase() )===null) {
+							localStorage.setItem(palabras[i].toLowerCase() , 1);
 						
-					} else {
-						var valor=Number.parseInt(localStorage.getItem(palabras[i].toLowerCase() ))+1;
-						localStorage.setItem(palabras[i].toLowerCase() , valor);
-					}			
+						} else {
+							var valor=Number.parseInt(localStorage.getItem(palabras[i].toLowerCase() ))+1;
+							localStorage.setItem(palabras[i].toLowerCase() , valor);
+						}			
 					
-					
+					}
 				}
 				
 				
@@ -47,6 +48,8 @@ class Contador{
 		
 	}
 	
+	
+	
 	mostrar(){
 		var palabras=[];
 		
@@ -57,16 +60,25 @@ class Contador{
 			}
 			
 			else{
+				var minimo=Number.MAX_VALUE;
+				var pos=palabras.length+1;
 				for(var j=0; j<palabras.length;j++){
-					if(Number.parseInt(localStorage.getItem(palabras[j]))<	Number.parseInt(localStorage.getItem(localStorage.key(i)))){
-						palabras[j]=localStorage.key(i);
-						break;
+					if(Number.parseInt(localStorage.getItem(palabras[j]))<	minimo){
+						minimo=Number.parseInt(localStorage.getItem(palabras[j]));
+						pos=j;
 					}
+				}
+				
+				if(minimo<	Number.parseInt(localStorage.getItem(localStorage.key(i)))){
+						palabras[pos]=localStorage.key(i);
+						
 				}
 			
 			}
 			
 		}
+		
+		
 	
 		var maximo=0;
 		for(var i=0; i<palabras.length;i++){
@@ -78,12 +90,16 @@ class Contador{
 			
 		}
 		
+		
+		
 		if(maximo!=0){
+			palabras=this.ordenar(palabras);
 			var canvas = document.getElementById('canvas');
 			var canvas1 = canvas.getContext('2d');
 			canvas1.clearRect(0, 0, canvas.width, canvas.height);
 
 			for(var i=0; i<palabras.length;i++){
+				
 				canvas1.beginPath();
 		
 		
@@ -96,7 +112,7 @@ class Contador{
 		
 				canvas1.beginPath();
 				canvas1.strokeStyle = "rgba(0, 0, 255, 1)";
-				canvas1.font = 'arial 1em sans-serif';
+				canvas1.font = ' Helvetica sans-serif';
 				canvas1.strokeText(palabras[i], 5, 20+10*i);
 				canvas1.strokeText(localStorage.getItem(palabras[i]), 210, 20+10*i);
 		
@@ -106,6 +122,27 @@ class Contador{
 		
 		}
 
+	}
+	
+	ordenar(palabras){
+		
+		for(var i=0; i<palabras.length;i++){
+			var imin=i;
+			for(var j=i+1; j<palabras.length;j++){
+				if(Number.parseInt(localStorage.getItem(palabras[j]))>Number.parseInt(localStorage.getItem(palabras[imin]))){
+					imin=j;
+				}
+			}
+			
+			var aux=palabras[i];
+			palabras[i]=palabras[imin];
+			palabras[imin]=aux;
+			
+			
+		}
+		
+		return palabras;
+		
 	}
 
 	
